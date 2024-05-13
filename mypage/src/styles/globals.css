@@ -11,25 +11,6 @@ a {
   text-decoration: none;
 }
 
-body, button, a {
-  cursor: url('/images/chopsticks.png'), auto;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.conveyorBelt {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  animation: moveRightToLeft 30s linear infinite;
-}
-
 @keyframes moveRightToLeft {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }

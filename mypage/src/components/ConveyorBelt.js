@@ -1,47 +1,51 @@
-import React, { useRef, useEffect } from 'react';
-import styles from '../styles/ConveyorBelt.module.css'; 
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper';
 
+import 'swiper/css';
+import "swiper/css/effect-coverflow";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-const ConveyorBelt = ({ children }) => {
-  const scrollContainerRef = useRef(null);
-  const scrollIntervalRef = useRef(null);
+import sushi from '../images/sushi.png';
 
-  const startAutoScroll = () => {
-    if (scrollIntervalRef.current) clearInterval(scrollIntervalRef.current);
-    scrollIntervalRef.current = setInterval(() => {
-      const { current } = scrollContainerRef;
-      if (current) {
-        current.scrollLeft += 2; 
-      }
-    }, 30); 
-  };
+SwiperCore.use({Navigation, Autoplay, EffectCoverflow, Pagination});
 
-  useEffect(() => {
-    startAutoScroll();
-    return () => {
-      if (scrollIntervalRef.current) clearInterval(scrollIntervalRef.current);
-    };
-  }, []);
-
-  const scroll = (direction) => {
-    const { current } = scrollContainerRef;
-    if (current) {
-      const scrollAmount = 300; // adjust this value based on your needs
-      const newScrollPosition = direction === 'left' ? current.scrollLeft - scrollAmount : current.scrollLeft + scrollAmount;
-      current.scrollTo({ left: newScrollPosition, behavior: 'smooth' });
-    }
-  };
+const ConveyorBelt = () => {
+  const images = [
+    sushi, 
+    sushi, 
+    sushi, 
+    sushi, 
+    sushi, 
+    sushi, 
+    sushi, 
+  ];
 
   return (
-    <div className={styles.conveyorWrapper}>
-      <button onClick={() => scroll('left')} className={styles.scrollButton}>←</button>
-      <div className={styles.conveyorBelt} ref={scrollContainerRef}>
-        {children}
-      </div>
-      <button onClick={() => scroll('right')} className={styles.scrollButton}>→</button>
-    </div>
+    <Swiper
+      navigation={true}
+      effect={'coverflow'}
+      centeredSlides={true}
+      slidesPerView={'auto'}
+      loop={true}
+      coverflowEffect={{
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true
+      }}
+      pagination={{ clickable: true }}
+      className='swiper-slide'
+    >
+      {images.map((image, index) => (
+        <SwiperSlide key={index}>
+          <img src={image} alt={`Slide ${index + 1}`} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 
 export default ConveyorBelt;
-

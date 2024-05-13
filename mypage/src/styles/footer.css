@@ -1,0 +1,48 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f18e8e;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.footer-text {
+    font-size: 16px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.insta img {
+    width: 30px;
+    height: 30px;
+}
+
+.insta :hover {
+    transform: scale(1.1);
+}
+
+.github img {
+    width: 27px;
+    height: 27px;
+    margin-right: 20px;
+}
+
+.github :hover {
+    transform: scale(1.1);
+}
+
+.linkedin img {
+    width: 32px;
+    height: 32px;
+    margin-right: 18px;
+}
+
+.linkedin :hover {
+    transform: scale(1.1);
+}
