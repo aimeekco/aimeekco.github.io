@@ -1,7 +1,7 @@
 import React from "react";
-import instagram from "../images/instagram.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
+import mail from "../images/mail.png";
 import "../styles/footer.css";
 
 const Footer = () => {
@@ -25,12 +25,12 @@ const Footer = () => {
           <img src={linkedin} alt="Linkedin" />
         </a>
         <a
-          href="https://www.instagram.com/aimeee.co/"
+          href="mailto:aimeekco@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="insta"
+          className="mail"
         >
-          <img src={instagram} alt="Instagram" />
+          <img src={mail} alt="Mail" />
         </a>
       </div>
     </footer>
