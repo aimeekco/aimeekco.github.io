@@ -1,40 +1,47 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper';
+import { Navigation, Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
-import "swiper/css/effect-coverflow";
+import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 import sushi from '../images/sushi.png';
-
-SwiperCore.use({Navigation, Autoplay, EffectCoverflow, Pagination});
 
 const ConveyorBelt = () => {
   const images = [
     sushi, 
     sushi, 
     sushi, 
-    sushi, 
-    sushi, 
-    sushi, 
-    sushi, 
+    sushi,
+    sushi,
+    sushi,
+    sushi
   ];
 
   return (
     <Swiper
+      modules={[Navigation, Autoplay, EffectCoverflow, Pagination]}
       navigation={true}
       effect={'coverflow'}
       centeredSlides={true}
-      slidesPerView={'auto'}
+      slidesPerView={'3'}
+      spaceBetween={30}
       loop={true}
+      autoplay={{ 
+        delay: 1000, 
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true 
+      }}
+      speed={1000}
       coverflowEffect={{
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true
+        slideShadows: false
       }}
       pagination={{ clickable: true }}
       className='swiper-slide'
