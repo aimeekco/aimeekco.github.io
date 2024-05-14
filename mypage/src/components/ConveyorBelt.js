@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 import sushi from '../images/sushi.png';
+import '../styles/conveyorBelt.css';
 
 const ConveyorBelt = () => {
   const projects = [
@@ -33,9 +34,9 @@ const ConveyorBelt = () => {
       autoplay={{ 
         delay: 1000, 
         disableOnInteraction: false,
-        pauseOnMouseEnter: true 
+        pauseOnMouseEnter: false 
       }}
-      speed={1000}
+      speed={4000}
       coverflowEffect={{
         rotate: 50,
         stretch: 0,
@@ -44,7 +45,7 @@ const ConveyorBelt = () => {
         slideShadows: false
       }}
       pagination={{ clickable: true }}
-      className='swiper-slide'
+      className='swiper-container'
     >
       {projects.map((project, index) => (
         <SwiperSlide key={index}>

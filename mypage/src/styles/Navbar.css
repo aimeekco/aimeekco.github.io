@@ -1,6 +1,6 @@
 .navbar {
     text-align: center;
-    background-color: #880808; /* Dark background for the top bar */
+    background-color: #880808; 
     color: white;
     padding: 10px 20px;
     height: 80px;
@@ -12,36 +12,40 @@
     font-family: 'Hirosh', sans-serif;
 }
 
-.nav-lanterns {
+.lanternandtext {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 150px;
     font-family: 'Osaka', sans-serif;
-}
-  
-.nav-lanterns span {
-  margin: 0 100px; 
-  display: inline-block; 
-  transition: transform 0.3s ease; 
-  justify-content: center;
-  text-decoration: none;
-  color: black;
+    transition: transform 0.3s ease;
 }
 
-.nav-lanterns span:hover {
+.lanternandtext:hover {
   transform: scale(1.1); 
 }
 
-.nav-lanterns img.lantern {
+.lanternandtext img.lantern {
   transition: transform 0.3s ease;
 }
 
-.nav-lanterns img.lantern:hover {
+.lanternandtext img.lantern:hover {
   transform: scale(1.1);
   content: url('../images/litlantern.png'); 
 }
 
+.nav-lanterns {
+    display: flex;
+    justify-content: center;
+}
+  
+.lanternandtext span {
+  display: inline-block; 
+  transition: transform 0.3s ease; 
+  color: black;
+}
   
 @font-face {
   font-family: 'Osaka';
@@ -56,3 +60,31 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@media (max-width: 1200px) {
+  .lanternandtext {
+    margin: 0 100px; 
+  }
+}
+
+@media (max-width: 1000px) {
+  .lanternandtext {
+    margin: 0 75px; 
+  }
+}
+
+@media (max-width: 800px) {
+  .lanternandtext {
+    margin: 0 40px; 
+  }
+}
+
+@media (max-width: 500px) {
+  .lanternandtext {
+    margin: 0 5px; 
+  }
+  .title-bar {
+    font-size: 30px; 
+  }
+}
+

@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/Navbar.css'; 
 import { Link } from 'react-router-dom';
 import lantern from '../images/lantern.png';
-import litLantern from '../images/litlantern.png';
 
 function Navbar() {
   return (
@@ -13,10 +12,30 @@ function Navbar() {
           </div>
       </div>
       <div className="nav-lanterns">
-          <Link to="/aboutme"><span><img src={lantern} alt="About me" height={80} className="lantern" data-lit-lantern={litLantern}/> About me! </span></Link>
-          <Link to="/aboutpage"><span><img src={lantern} alt="About this page" height={80} className="lantern" data-lit-lantern={litLantern}/> About page </span></Link>
-          <Link to="/"><span><img src={lantern} alt="Gallery" height={80} className="lantern" data-lit-lantern={litLantern}/> Gallery </span></Link>
-          <Link to="/contact"><span><img src={lantern} alt="Contact" height={80} className="lantern" data-lit-lantern={litLantern}/> Contact </span></Link>
+          <Link to="/aboutme">
+            <div className="lanternandtext">
+              <img src={lantern} alt="About me" height={80} className="lantern"/> 
+              <span> About me! </span>
+            </div>
+          </Link>
+          <Link to="/aboutpage">
+            <div className="lanternandtext">
+              <img src={lantern} alt="About this page" height={80} className="lantern"/>
+              <span> About page </span>
+            </div>
+          </Link>
+          <Link to="/">
+            <div className="lanternandtext">
+              <img src={lantern} alt="Gallery" height={80} className="lantern"/> 
+              <span> Gallery </span>
+            </div>
+          </Link>
+          <Link to="/contact">
+            <div className="lanternandtext">
+              <img src={lantern} alt="Contact" height={80} className="lantern"/>
+              <span> Contact </span>
+            </div>
+          </Link>
       </div>
     </nav>
   );
