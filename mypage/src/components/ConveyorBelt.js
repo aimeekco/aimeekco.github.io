@@ -11,7 +11,7 @@ import 'swiper/css/autoplay';
 import sushi from '../images/sushi.png';
 
 const ConveyorBelt = () => {
-  const images = [
+  const projects = [
     sushi, 
     sushi, 
     sushi, 
@@ -46,9 +46,9 @@ const ConveyorBelt = () => {
       pagination={{ clickable: true }}
       className='swiper-slide'
     >
-      {images.map((image, index) => (
+      {projects.map((project, index) => (
         <SwiperSlide key={index}>
-          <img src={image} alt={`Slide ${index + 1}`} />
+          <img src={project} alt={`Slide ${index + 1}`} />
         </SwiperSlide>
       ))}
     </Swiper>

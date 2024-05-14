@@ -17,9 +17,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-family: 'Hirosh', sans-serif;
-    text-decoration: none;
-    color: black;
+    font-family: 'Osaka', sans-serif;
 }
   
 .nav-lanterns span {
@@ -27,12 +25,31 @@
   display: inline-block; 
   transition: transform 0.3s ease; 
   justify-content: center;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-lanterns span:hover {
   transform: scale(1.1); 
 }
+
+.nav-lanterns img.lantern {
+  transition: transform 0.3s ease;
+}
+
+.nav-lanterns img.lantern:hover {
+  transform: scale(1.1);
+  content: url('../images/litlantern.png'); 
+}
+
   
+@font-face {
+  font-family: 'Osaka';
+  src: url('../fonts/osaka.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'Hirosh';
   src: url('../fonts/hirosh.TTF') format('truetype');
