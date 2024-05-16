@@ -1,0 +1,17 @@
+.aboutme-container {
+    display: flex;
+}
+
+.minime {
+  margin-right: 20px;
+}
+
+.minime img {
+  width: 900px;
+}
+  
+.fun-facts {
+    font-size: 16px; /* Adjust as needed for text styling */
+    margin-left: 20px; 
+    margin-top: 20px;
+}
