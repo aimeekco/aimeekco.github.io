@@ -19,19 +19,16 @@ function AboutMe() {
             <div className="panels-container">
                 <Parallax className="panel" y={[-20, 20]}>
                     <div className="panel-content">
-                        <img src={minime} alt="Fact 1" />
                         <p>Fun Fact 1</p>
                     </div>
                 </Parallax>
                 <Parallax className="panel" y={[-20, 20]}>
                     <div className="panel-content">
-                        <img src={minime} alt="Fact 2" />
                         <p>Fun Fact 2</p>
                     </div>
                 </Parallax>
                 <Parallax className="panel" y={[-20, 20]}>
                     <div className="panel-content">
-                        <img src={minime} alt="Fact 3" />
                         <p>Fun Fact 3</p>
                     </div>
                 </Parallax>

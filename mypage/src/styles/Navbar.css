@@ -1,9 +1,23 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.full-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 .navbar {
+    width: 100%;
     text-align: center;
     background-color: #880808; 
     color: white;
     padding: 10px 20px;
     height: 80px;
+    z-index: 1000;
 }
 
 .title-bar {

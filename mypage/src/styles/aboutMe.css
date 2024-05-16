@@ -1,3 +1,9 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,12 +16,12 @@ html {
     width: 100%;
     height: 100vh;
     padding: 20px;
-    margin-top: -150px;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-top: 100px;
 }
 
 .minime {
-  margin: 0 20px;
+  margin-right: 0 20px;
   flex-shrink: 0;
 }
 
@@ -27,7 +33,6 @@ html {
   
 .hello {
     font-size: 30px; 
-    margin-left: 20px; 
     font-family: 'LatoBlack', sans-serif;
 }
 
@@ -46,7 +51,7 @@ html {
   align-items: center;
   background: #fff;
   margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: -100;
 }
 
 .panel-content {
@@ -54,8 +59,8 @@ html {
 }
 
 .panel img {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -68,9 +73,10 @@ html {
   .aboutme-container {
     flex-direction: column;
     justify-content: center;
+    margin-top: 40px;
   }
-  .minime, fun-facts {
-    margin: 10px 0;
+  .hello {
+    margin-top: -40px;
   }
 }
 

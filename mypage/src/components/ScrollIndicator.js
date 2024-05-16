@@ -4,7 +4,7 @@ import '../styles/scrollIndicator.css';
 function ScrollIndicator() {
     return (
         <div className="scroll-indicator">
-            <span>↓ More about me! ↓ </span>
+            <span>↓ Scroll down! ↓ </span>
             <div className="arrow"></div>
         </div>
     );

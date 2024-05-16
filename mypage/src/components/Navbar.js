@@ -5,7 +5,7 @@ import lantern from '../images/lantern.png';
 
 function Navbar() {
   return (
-    <nav>
+    <div className="full-container">
       <div className="navbar">
           <div className="title-bar">
               Aimee's Sushi
@@ -22,7 +22,7 @@ function Navbar() {
             <div className="lanternandtext">
               <img src={lantern} alt="About this page" height={80} className="lantern"/>
               <span> About page </span>
-            </div>
+            </div> 
           </Link>
           <Link to="/landing">
             <div className="lanternandtext">
@@ -37,7 +37,7 @@ function Navbar() {
             </div>
           </Link>
       </div>
-    </nav>
+    </div>
   );
 }
 
