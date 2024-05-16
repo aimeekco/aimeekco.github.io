@@ -12,7 +12,7 @@ function Navbar() {
           </div>
       </div>
       <div className="nav-lanterns">
-          <Link to="/aboutme">
+          <Link to="/">
             <div className="lanternandtext">
               <img src={lantern} alt="About me" height={80} className="lantern"/> 
               <span> About me! </span>
@@ -24,10 +24,10 @@ function Navbar() {
               <span> About page </span>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/landing">
             <div className="lanternandtext">
-              <img src={lantern} alt="Gallery" height={80} className="lantern"/> 
-              <span> Gallery </span>
+              <img src={lantern} alt="Projects" height={80} className="lantern"/> 
+              <span> Projects </span>
             </div>
           </Link>
           <Link to="/contact">

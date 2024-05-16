@@ -24,16 +24,15 @@
     text-decoration: none;
 }
 
-.lanternandtext:hover {
+/* .lanternandtext:hover {
   transform: scale(1.1); 
-}
+} */
 
 .lanternandtext img.lantern {
   transition: transform 0.3s ease;
 }
 
 .lanternandtext img.lantern:hover {
-  transform: scale(1.1);
   content: url('../images/litlantern.png'); 
 }
 
