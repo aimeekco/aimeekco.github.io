@@ -8,6 +8,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 import sushi from '../images/sushi.png';
+import ikura from '../images/ikura.png';
+import salmon from '../images/salmon.png';
+import tuna from '../images/tuna.png';
 import '../styles/conveyorBelt.css';
 import geolocation from '../images/p-geolocation demo.mp4';
 import newspaper from '../images/pnewsdemo.mp4';
@@ -16,11 +19,11 @@ import lungcancer from '../images/cnndemo.mov';
 import mazegame from '../images/mazegamedemo.mp4';
 
 const projects = [
-  { image: sushi, demo: newspaper, title: 'P-Newspaper', description: 'An AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests.',
+  { image: ikura, demo: newspaper, title: 'P-Newspaper', description: 'An AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests.',
     longdescription: 'P-Newspaper is an AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests. The app uses a combination of natural language processing and machine learning algorithms to analyze and categorize articles, ensuring that users receive the most relevant and up-to-date news content. P-Newspaper also provides users with the ability to save articles, create custom news feeds, and receive real-time notifications for breaking news stories. With its intuitive user interface and advanced features, P-Newspaper offers a unique and personalized news reading experience for users of all backgrounds and interests.'},
-  { image: sushi, demo: geolocation, title: 'P-Geolocation', description: 'A web app that returns a user\'s location on Google Maps given two timestamped images of the sun.',
+  { image: salmon, demo: geolocation, title: 'P-Geolocation', description: 'A web app that returns a user\'s location on Google Maps given two timestamped images of the sun.',
     longdescription: 'P-Geolocation is a web app that returns a user\'s location on Google Maps given two timestamped images of the sun. The app uses computer vision algorithms to analyze the position of the sun in each image and calculate the user\'s latitude and longitude based on the angle of the sun. By comparing the timestamps of the images, P-Geolocation can determine the user\'s location at the time the photos were taken. This innovative technology allows users to geolocate themselves without the need for GPS or other location-based services, making it an ideal solution for remote or off-grid locations.'},
-  { image: sushi, demo: roomdraw, title: 'Pomona College Room Draw - 2024 5C Hackathon', description: 'A user-centric revamp of the Pomona Room Draw website with real-time user interactions.',
+  { image: tuna, demo: roomdraw, title: 'Pomona College Room Draw - 2024 5C Hackathon', description: 'A user-centric revamp of the Pomona Room Draw website with real-time user interactions.',
     longdescription: 'Pomona College Room Draw is a web application that simplifies the room selection process for students at Pomona College. The app allows students to view available rooms, select their preferences, and receive real-time updates on the status of their room draw. By providing a user-friendly interface and intuitive features, Pomona College Room Draw streamlines the room selection process and enhances the overall experience for students. With its innovative design and functionality, the app offers a modern and efficient solution for managing room draw at Pomona College.'},
   { image: sushi, demo: lungcancer, title: 'Lung Cancer Detection CNN', description: 'A convolutional neural network to detect lung cancer from histopathology images.',
     longdescription: 'Lung Cancer Detection CNN is a convolutional neural network (CNN) that can accurately detect lung cancer from histopathology images. The CNN uses a deep learning algorithm to analyze the features of lung tissue samples and identify cancerous cells with high precision. By training the CNN on a large dataset of annotated images, the model can learn to distinguish between healthy and cancerous tissue and provide accurate diagnoses in real-time. This innovative technology has the potential to revolutionize the field of cancer detection and improve patient outcomes by enabling early diagnosis and treatment of lung cancer.'},
