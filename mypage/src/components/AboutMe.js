@@ -1,16 +1,40 @@
 import React from 'react';
-import minime from '../images/minimeturn.png'; 
+import { Parallax } from 'react-scroll-parallax';
+import minime from '../images/minimeturn.png';
 import '../styles/aboutMe.css';
+import ScrollIndicator from './ScrollIndicator';
 
 function AboutMe() {
-
     return (
-        <div className="aboutme-container">
-            <div className="minime">
-                <img src={minime} alt="Aimee" />
+        <div>
+            <div className="aboutme-container">
+                <div className="minime">
+                    <img src={minime} alt="Aimee" />
+                </div>
+                <div className="hello">
+                    <h1>Hi! I'm Aimee</h1>
+                </div>
             </div>
-            <div className="fun-facts">
-                <h2> Hi! I'm Aimee </h2>
+            <ScrollIndicator />
+            <div className="panels-container">
+                <Parallax className="panel" y={[-20, 20]}>
+                    <div className="panel-content">
+                        <img src={minime} alt="Fact 1" />
+                        <p>Fun Fact 1</p>
+                    </div>
+                </Parallax>
+                <Parallax className="panel" y={[-20, 20]}>
+                    <div className="panel-content">
+                        <img src={minime} alt="Fact 2" />
+                        <p>Fun Fact 2</p>
+                    </div>
+                </Parallax>
+                <Parallax className="panel" y={[-20, 20]}>
+                    <div className="panel-content">
+                        <img src={minime} alt="Fact 3" />
+                        <p>Fun Fact 3</p>
+                    </div>
+                </Parallax>
             </div>
         </div>
     );
