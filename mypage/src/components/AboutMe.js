@@ -1,15 +1,16 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import minime from '../images/minimeturn.png';
+import minimeturn from '../images/minimeturning.png';
 import '../styles/aboutMe.css';
 import ScrollIndicator from './ScrollIndicator';
+import Timeline from './Timeline';
 
 function AboutMe() {
     return (
         <div>
             <div className="aboutme-container">
                 <div className="minime">
-                    <img src={minime} alt="Aimee" />
+                    <img src={minimeturn} alt="Aimee" />
                 </div>
                 <div className="hello">
                     <h1>Hi! I'm Aimee</h1>
@@ -17,19 +18,19 @@ function AboutMe() {
             </div>
             <ScrollIndicator />
             <div className="panels-container">
-                <Parallax className="panel" y={[-20, 20]}>
+                <Parallax className="panel" >
                     <div className="panel-content">
-                        <p>Fun Fact 1</p>
+                        <Timeline />
                     </div>
                 </Parallax>
-                <Parallax className="panel" y={[-20, 20]}>
+                <Parallax className="panel" >
                     <div className="panel-content">
                         <p>Fun Fact 2</p>
                     </div>
                 </Parallax>
-                <Parallax className="panel" y={[-20, 20]}>
+                <Parallax className="panel" >
                     <div className="panel-content">
-                        <p>Fun Fact 3</p>
+                        <h2>Some fun facts!</h2>
                     </div>
                 </Parallax>
             </div>
