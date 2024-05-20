@@ -24,17 +24,99 @@ import datathon from '../images/datathondemo.mov';
 
 const projects = [
   { image: ikura, demo: newspaper, title: 'P-Newspaper', description: 'An AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests.',
-    longdescription: 'P-Newspaper is an AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests. The app uses a combination of natural language processing and machine learning algorithms to analyze and categorize articles, ensuring that users receive the most relevant and up-to-date news content. P-Newspaper also provides users with the ability to save articles, create custom news feeds, and receive real-time notifications for breaking news stories. With its intuitive user interface and advanced features, P-Newspaper offers a unique and personalized news reading experience for users of all backgrounds and interests.'},
+    longdescription: (
+      <ul>
+        <li><strong>Role:</strong> Project manager and lead developer</li>
+        <li><strong>Goal:</strong> Increase availability of interesting news and reduce bias by:
+          <ul>
+            <li>Sourcing from a wide array of reputable news sites</li>
+            <li>Displaying summaries without the news source name attached</li>
+          </ul>
+        </li>
+        <li><strong>Technologies Used:</strong>
+          <ul>
+            <li>AWS Lambda function using Newspaper3K library to scrape news sites</li>
+            <li>PostgreSQL database to store articles</li>
+            <li>Monitored by Cloudwatch to execute every 12 hours</li>
+            <li>User data and interests stored in a separate schema</li>
+            <li>TSVector from article summaries in DB, matching user-selected interests</li>
+          </ul>
+        </li>
+        <li><strong>Functionality:</strong>
+          <ul>
+            <li>User inputs topics in a freeform manner</li>
+            <li>Inputs and remaining articles sent to OpenAI API for relevance sorting</li>
+          </ul>
+        </li>
+      </ul>
+    )
+  },
   { image: salmon, demo: geolocation, title: 'P-Geolocation', description: 'A web app that returns a user\'s location on Google Maps given two timestamped images of the sun.',
-    longdescription: 'P-Geolocation is a web app that returns a user\'s location on Google Maps given two timestamped images of the sun. The app uses computer vision algorithms to analyze the position of the sun in each image and calculate the user\'s latitude and longitude based on the angle of the sun. By comparing the timestamps of the images, P-Geolocation can determine the user\'s location at the time the photos were taken. This innovative technology allows users to geolocate themselves without the need for GPS or other location-based services, making it an ideal solution for remote or off-grid locations.'},
+    longdescription: 
+      <ul>
+        <li><strong>Role:</strong> Project member, lead frontend developer</li>
+        <li><strong>Goal:</strong> Calculates latitude and longitude of user based on difference in angle with horizon and time of two images of the sun.</li>
+        <li><strong>Features:</strong>
+          <ul>
+            <li>Embedded Google Maps feature with marker to show user's position with area of uncertainty.</li>
+          </ul>
+        </li>
+      </ul>
+  },
   { image: tuna, demo: roomdraw, title: 'Pomona College Room Draw - 2024 5C Hackathon', description: 'A user-centric revamp of the Pomona Room Draw website with real-time user interactions.',
-    longdescription: 'Pomona College Room Draw is a web application that simplifies the room selection process for students at Pomona College. The app allows students to view available rooms, select their preferences, and receive real-time updates on the status of their room draw. By providing a user-friendly interface and intuitive features, Pomona College Room Draw streamlines the room selection process and enhances the overall experience for students. With its innovative design and functionality, the app offers a modern and efficient solution for managing room draw at Pomona College.'},
+    longdescription: 
+      <ul>
+        <li><strong>Role:</strong> Project member, lead frontend developer</li>
+        <li><strong>Goal:</strong> Transform Pomona College’s room draw process into a less stressful and more interactive experience.</li>
+        <li><strong>Features:</strong>
+          <ul>
+            <li>User authentication – checks if email address is attributed to Pomona College, and authenticates name and room draw time.</li>
+            <li>Interactive map of all dorms → select dorm to view floor plan or select from navigation bar dropdown menu.</li>
+            <li>Clickable rooms in floor plan. Color coding: Green for open room, blue for current user’s selection, red for taken.</li>
+            <li>Priority system: students with lower graduation year or earlier draw time can replace another student's selection (interaction shown in video).</li>
+          </ul>
+        </li>
+      </ul>
+  },
   { image: roll, demo: lungcancer, title: 'Lung Cancer Detection CNN', description: 'A convolutional neural network to detect lung cancer from histopathology images.',
-    longdescription: 'Lung Cancer Detection CNN is a convolutional neural network (CNN) that can accurately detect lung cancer from histopathology images. The CNN uses a deep learning algorithm to analyze the features of lung tissue samples and identify cancerous cells with high precision. By training the CNN on a large dataset of annotated images, the model can learn to distinguish between healthy and cancerous tissue and provide accurate diagnoses in real-time. This innovative technology has the potential to revolutionize the field of cancer detection and improve patient outcomes by enabling early diagnosis and treatment of lung cancer.'},
+    longdescription: 
+    <ul>
+      <li><strong>Role:</strong> Project member, lead machine learning developer</li>
+      <li><strong>Goal:</strong> Develop machine learning tool to automate and improve accuracy of lung cancer diagnoses; can also be used on other types of cancers.</li>
+      <li><strong>Features:</strong>
+        <ul>
+          <li>TensorFlow Keras to implement standard CNN to detect lung cancer from set of histopathology images.</li>
+          <li>80% accuracy rate, shown in confusion matrix graph.</li>
+        </ul>
+      </li>
+    </ul>
+  },
   { image: tamago, demo: mazegame, title: 'Maze Game', description: 'Random maze generation using depth-first-search and game playable on resulting maze.',
-    longdescription: 'Maze Game is a web-based game that generates random mazes using a depth-first search algorithm and allows players to navigate through the maze to reach the end goal. The game features an intuitive user interface, responsive controls, and challenging levels that test players\' problem-solving skills and spatial awareness. With its dynamic maze generation and interactive gameplay, Maze Game offers a fun and engaging experience for players of all ages. Whether you\'re a casual gamer or a maze enthusiast, Maze Game provides hours of entertainment and excitement.'},
+    longdescription: 
+      <ul>
+        <li><strong>Role:</strong> Project member, lead developer</li>
+        <li><strong>Goal:</strong> Create visually interesting maze generation display and gameplay.</li>
+        <li><strong>Features:</strong>
+          <ul>
+            <li>PyGame to create visually interesting maze generation display and gameplay.</li>
+            <li>Depth-first-search to randomly generate maze.</li>
+          </ul>
+        </li>
+      </ul>
+  },
   { image: uni, demo: geolocation, title: 'Duolingo Half-Life Regression', description: 'Brief description of Project 6',
-    longdescription: 'hellooo' },
+    longdescription: 
+    <ul>
+      <li><strong>Role:</strong> Team leader, lead data scientist</li>
+      <li><strong>Goal:</strong> Compete in an 8-hour datathon to create predictive models for flight delays.</li>
+      <li><strong>Features:</strong>
+        <ul>
+          <li>Placed 1st out of 30 teams with the highest AUROC score.</li>
+          <li>Implemented XGBoost on flight delay dataset.</li>
+        </ul>
+      </li>
+    </ul>
+  },
   { image: sushi, demo: datathon, title: 'Flight Delay Prediction - 2023 5C Datathon', description: 'Brief description of Project 6',
     longdescription: 'helloooo' }
   ];
@@ -120,7 +202,7 @@ const ConveyorBelt = () => {
                 <source src={enlargedProject.demo} type="video/quicktime" />
                 Your browser does not support the video tag.
               </video>
-              <div className='description-container'>
+              <div >
                 <h3>{enlargedProject.title}</h3>
                 <p>{enlargedProject.longdescription}</p>
               </div>
