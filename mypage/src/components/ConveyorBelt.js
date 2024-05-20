@@ -21,9 +21,10 @@ import roomdraw from '../images/roomdrawdemo.mp4';
 import lungcancer from '../images/cnndemo.mov';
 import mazegame from '../images/mazegamedemo.mp4';
 import datathon from '../images/datathondemo.mov';
+import halfliferegression from '../images/halfliferegression.pdf';
 
 const projects = [
-  { image: ikura, demo: newspaper, title: 'P-Newspaper', description: 'An AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests.',
+  { type: 'video', image: ikura, demo: newspaper, title: 'P-Newspaper', description: 'An AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests.',
     longdescription: (
       <ul>
         <li><strong>Role:</strong> Project manager and lead developer</li>
@@ -51,7 +52,7 @@ const projects = [
       </ul>
     )
   },
-  { image: salmon, demo: geolocation, title: 'P-Geolocation', description: 'A web app that returns a user\'s location on Google Maps given two timestamped images of the sun.',
+  { type: 'video', image: salmon, demo: geolocation, title: 'P-Geolocation', description: 'A web app that returns a user\'s location on Google Maps given two timestamped images of the sun.',
     longdescription: 
       <ul>
         <li><strong>Role:</strong> Project member, lead frontend developer</li>
@@ -63,7 +64,7 @@ const projects = [
         </li>
       </ul>
   },
-  { image: tuna, demo: roomdraw, title: 'Pomona College Room Draw - 2024 5C Hackathon', description: 'A user-centric revamp of the Pomona Room Draw website with real-time user interactions.',
+  { type: 'video', image: tuna, demo: roomdraw, title: 'Pomona College Room Draw - 2024 5C Hackathon', description: 'A user-centric revamp of the Pomona Room Draw website with real-time user interactions.',
     longdescription: 
       <ul>
         <li><strong>Role:</strong> Project member, lead frontend developer</li>
@@ -78,10 +79,9 @@ const projects = [
         </li>
       </ul>
   },
-  { image: roll, demo: lungcancer, title: 'Lung Cancer Detection CNN', description: 'A convolutional neural network to detect lung cancer from histopathology images.',
+  { type: 'video', image: roll, demo: lungcancer, title: 'Lung Cancer Detection CNN', description: 'A convolutional neural network to detect lung cancer from histopathology images.',
     longdescription: 
     <ul>
-      <li><strong>Role:</strong> Project member, lead machine learning developer</li>
       <li><strong>Goal:</strong> Develop machine learning tool to automate and improve accuracy of lung cancer diagnoses; can also be used on other types of cancers.</li>
       <li><strong>Features:</strong>
         <ul>
@@ -91,34 +91,44 @@ const projects = [
       </li>
     </ul>
   },
-  { image: tamago, demo: mazegame, title: 'Maze Game', description: 'Random maze generation using depth-first-search and game playable on resulting maze.',
+  { type: 'video', image: tamago, demo: mazegame, title: 'Maze Game', description: 'Random maze generation using depth-first-search and game playable on resulting maze.',
     longdescription: 
       <ul>
-        <li><strong>Role:</strong> Project member, lead developer</li>
         <li><strong>Goal:</strong> Create visually interesting maze generation display and gameplay.</li>
         <li><strong>Features:</strong>
           <ul>
             <li>PyGame to create visually interesting maze generation display and gameplay.</li>
-            <li>Depth-first-search to randomly generate maze.</li>
+            <li>Depth-first-search to generate a new random maze for each game.</li>
           </ul>
         </li>
       </ul>
   },
-  { image: uni, demo: geolocation, title: 'Duolingo Half-Life Regression', description: 'Brief description of Project 6',
+  { type: 'pdf', image: uni, demo: halfliferegression, title: 'Duolingo Half-Life Regression', description: 'Predictive modeling using half-life regression and data analysis of the forgetting curve through the Duolingo app.',
     longdescription: 
     <ul>
-      <li><strong>Role:</strong> Team leader, lead data scientist</li>
-      <li><strong>Goal:</strong> Compete in an 8-hour datathon to create predictive models for flight delays.</li>
-      <li><strong>Features:</strong>
+      <li><strong>Goal:</strong> Analyze the relationship between exposure to words/phrases and the rate of forgetting through the Duolingo app and develop a predictive model for the forgetting curve.</li>
+      <li><strong>Outcomes:</strong>
+        <ul>
+          <li>Preprocessed data to extract features (recall proportion, time since last review, language details, lexeme strings) from Settles and Meeder 2016 dataset.</li>
+          <li>Compared 4 spaced repetition ML models - standard logistic regression, Leitner model, Pimsleur model, and half-life regression.</li>
+          <li>Implemented stochastic gradient descent to find ideal model weights to minimize L2-regularized squared loss function with some modifications.</li>
+          <li>Conducted statistical tests (MAE, Spearman's rank correlation, AUROC) to conclude that half-life regression is the most accurate model.</li>
+        </ul>
+      </li>
+    </ul>
+  },
+  { type: 'video', image: sushi, demo: datathon, title: 'Flight Delay Prediction', description: '1st Place - 2023 5C Datathon',
+    longdescription: 
+    <ul>
+      <li><strong>Goal:</strong> Compete in an 8-hour datathon to create a predictive model for flight delays.</li>
+      <li><strong>Outcomes:</strong>
         <ul>
           <li>Placed 1st out of 30 teams with the highest AUROC score.</li>
           <li>Implemented XGBoost on flight delay dataset.</li>
         </ul>
       </li>
     </ul>
-  },
-  { image: sushi, demo: datathon, title: 'Flight Delay Prediction - 2023 5C Datathon', description: 'Brief description of Project 6',
-    longdescription: 'helloooo' }
+  }
   ];
 
 const ConveyorBelt = () => {
@@ -197,11 +207,15 @@ const ConveyorBelt = () => {
           <div className="enlarged-card">
             <div className="enlarged-content">
               <button className="close-button" onClick={handleCloseClick}>✖</button>
-              <video controls>
-                <source src={enlargedProject.demo} type="video/mp4" />
-                <source src={enlargedProject.demo} type="video/quicktime" />
-                Your browser does not support the video tag.
-              </video>
+              {enlargedProject.type === 'video' ? (
+                <video controls>
+                  <source src={enlargedProject.demo} type="video/mp4" />
+                  <source src={enlargedProject.demo} type="video/quicktime" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <iframe src={enlargedProject.demo} width="100%" height="500px" title={enlargedProject.title}></iframe>
+              )}
               <div >
                 <h3>{enlargedProject.title}</h3>
                 <p>{enlargedProject.longdescription}</p>

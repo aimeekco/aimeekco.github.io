@@ -88,7 +88,7 @@
 }
 
 .enlarged-content video {
-  width: 60%;
+  width: 900px;
   height: auto;
   min-width: 500px;
 }
@@ -124,15 +124,24 @@
   .enlarged-content {
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .enlarged-content video {
     width: 100%;
     min-width: none;
+    max-width: 700px;
   }
   .description-container {
     max-height: none;
     width: 100%;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .enlarged content video {
+    min-width: none;
+    max-width: 300px;
   }
 }
 
