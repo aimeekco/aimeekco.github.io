@@ -7,13 +7,13 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
-import sushi from '../images/sushi.png';
 import ikura from '../images/ikura.png';
 import salmon from '../images/salmon.png';
 import tuna from '../images/tuna.png';
 import roll from '../images/roll.png';
 import tamago from '../images/tamago.png';
 import uni from '../images/uni.png';
+import onigiri from '../images/onigiri.png';
 import '../styles/conveyorBelt.css';
 import geolocation from '../images/p-geolocation demo.mp4';
 import newspaper from '../images/pnewsdemo.mp4';
@@ -117,7 +117,7 @@ const projects = [
       </li>
     </ul>
   },
-  { type: 'video', image: sushi, demo: datathon, title: 'Flight Delay Prediction', description: '1st Place - 2023 5C Datathon',
+  { type: 'video', image: onigiri, demo: datathon, title: 'Flight Delay Prediction', description: '1st Place - 2023 5C Datathon',
     longdescription: 
     <ul>
       <li><strong>Goal:</strong> Compete in an 8-hour datathon to create a predictive model for flight delays.</li>

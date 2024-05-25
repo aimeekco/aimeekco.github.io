@@ -4,10 +4,11 @@ import minimeturn from '../images/minimeturning.png';
 import '../styles/aboutMe.css';
 import ScrollIndicator from './ScrollIndicator';
 import Timeline from './Timeline';
+import PhotoGrid from './PhotoGrid';
 
 function AboutMe() {
     return (
-        <div>
+        <div className="content-container">
             <div className="aboutme-container">
                 <div className="minime">
                     <img src={minimeturn} alt="Aimee" />
@@ -25,12 +26,7 @@ function AboutMe() {
                 </Parallax>
                 <Parallax className="panel" >
                     <div className="panel-content">
-                        <p>Fun Fact 2</p>
-                    </div>
-                </Parallax>
-                <Parallax className="panel" >
-                    <div className="panel-content">
-                        <h2>Some fun facts!</h2>
+                        <PhotoGrid />
                     </div>
                 </Parallax>
             </div>

@@ -26,6 +26,10 @@ body, html {
     font-family: 'Hirosh', sans-serif;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 .lanternandtext {
     display: flex;
     justify-content: center;
@@ -39,22 +43,27 @@ body, html {
 }
 
 .lanternandtext:hover {
-  transform: scale(1.1); 
+  transform: scale(1.05); 
+  img.lantern {
+    content: url('../images/litlantern.png');
+  }
 }
 
 .lanternandtext img.lantern {
   transition: transform 0.3s ease;
 }
 
-.lanternandtext img.lantern:hover {
-  content: url('../images/litlantern.png'); 
-}
-
 .nav-lanterns {
     display: flex;
     justify-content: center;
+    transition: opacity 0.3s ease;
 }
   
+.nav-lanterns.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .lanternandtext span {
   display: inline-block; 
   transition: transform 0.3s ease; 
@@ -86,6 +95,9 @@ body, html {
   .lanternandtext {
     margin: 0 75px; 
   }
+  .hamburger-menu {
+    display: block;
+  }
 }
 
 @media (max-width: 800px) {
@@ -101,5 +113,29 @@ body, html {
   .title-bar {
     font-size: 30px; 
   }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #880808;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.mobile-menu a:hover {
+  background-color: #ffcccc;
 }
 
