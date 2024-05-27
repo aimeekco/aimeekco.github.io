@@ -8,6 +8,7 @@ body, html {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar {
@@ -17,7 +18,6 @@ body, html {
     color: white;
     padding: 10px 20px;
     height: 80px;
-    z-index: 1000;
 }
 
 .title-bar {
@@ -60,13 +60,10 @@ body, html {
 }
   
 .nav-lanterns.hidden {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 .lanternandtext span {
-  display: inline-block; 
-  transition: transform 0.3s ease; 
   color: black;
   text-decoration: none;
 }
@@ -98,6 +95,9 @@ body, html {
   .hamburger-menu {
     display: block;
   }
+  .nav-lanterns {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -124,6 +124,7 @@ body, html {
   top: 80px;
   width: 100%;
   z-index: 999;
+  opacity: 0.95;
 }
 
 .mobile-menu a {
@@ -136,6 +137,6 @@ body, html {
 }
 
 .mobile-menu a:hover {
-  background-color: #ffcccc;
+  background-color: #b42f2f;
 }
 

@@ -10,11 +10,11 @@ function App() {
   return (
     <ParallaxProvider>
       <Router>
-        <div className="App">
-          <Navbar />
+        <Navbar />
+        <div >
           <AppRoutes />
-          <Footer />
         </div>
+        <Footer />
       </Router>
     </ParallaxProvider>
   );

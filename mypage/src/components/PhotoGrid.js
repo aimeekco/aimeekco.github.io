@@ -7,6 +7,7 @@ import diving from '../images/diving.jpg';
 import violinportrait from '../images/violinportrait.JPEG';
 import violin from '../images/violin.jpg';
 import legoland from '../images/legoland.HEIC';
+import snowboard from '../images/snowboard.jpg';
 
 const photos = [
     { src: violinportrait, description: 'Photo 1 description' },
@@ -15,7 +16,8 @@ const photos = [
     { src: track, description: 'Photo 4 description' },
     { src: diving, description: 'Photo 5 description' },
     { src: googlemap, description: 'Photo 6 description' },
-    { src: legoland, description: 'Photo 7 description' }
+    { src: legoland, description: 'Photo 7 description' },
+    { src: snowboard, description: 'Photo 7 description' }
 ];
 
 const PhotoGrid = () => {
