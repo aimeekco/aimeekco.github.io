@@ -12,22 +12,30 @@ body, html {
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    text-align: center;
     background-color: #880808; 
     color: white;
     padding: 10px 20px;
-    height: 80px;
+    height: 70px;
+    position: relative;
 }
 
 .title-bar {
     font-size: 40px;
-    margin-top: 20px;
     font-family: 'Hirosh', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
 }
 
 .hamburger-menu {
   display: none;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .lanternandtext {
@@ -121,7 +129,6 @@ body, html {
   align-items: center;
   background-color: #880808;
   position: fixed;
-  top: 80px;
   width: 100%;
   z-index: 999;
   opacity: 0.95;

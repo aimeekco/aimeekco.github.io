@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import lantern from '../images/lantern.png';
+import hamburger from '../images/hamburger.png';
 
 function Navbar({ setShowLanterns }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,10 +10,10 @@ function Navbar({ setShowLanterns }) {
   return (
     <div className="full-container">
       <div className="navbar">
-        <div className="title-bar">Aimee's Sushi</div>
         <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
-          <img src={lantern} alt="Menu" height={40} />
+          <img src={hamburger} alt="Menu" height={40} />
         </div>
+        <div className="title-bar">Aimee's Sushi</div>
       </div>
       <div className={`nav-lanterns ${menuOpen ? 'hidden' : ''}`}>
         <Link to="/">
