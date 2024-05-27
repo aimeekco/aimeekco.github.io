@@ -112,6 +112,13 @@ body, html {
   .lanternandtext {
     margin: 0 40px; 
   }
+  .title-bar {
+    font-size: 30px; 
+  }
+  .hamburger-menu img {
+    width: 30px;
+    height: auto;
+  }
 }
 
 @media (max-width: 500px) {
@@ -119,7 +126,7 @@ body, html {
     margin: 0 5px; 
   }
   .title-bar {
-    font-size: 30px; 
+    font-size: 25px; 
   }
 }
 

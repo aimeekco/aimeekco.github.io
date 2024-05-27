@@ -26,8 +26,8 @@ function AboutMe() {
   }, [handleScroll]);
 
   return (
-    <div className="content-container">
-      <div className={`aboutme-container ${showLanterns ? '' : 'reduced-margin'}`}>
+    <div className={`content-container ${showLanterns ? '' : 'reduced-margin'}`}>
+      <div className="aboutme-container">
         <div className="minime">
           <img src={minimeturn} alt="Aimee" />
         </div>
