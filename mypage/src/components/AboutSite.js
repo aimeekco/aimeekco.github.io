@@ -1,13 +1,13 @@
 import React from 'react';
+import '../styles/aboutSite.css';
 
 function AboutPage() {
     return (
-        <div>
-            <div>
-                Inspiration for this page: 
+        <div className="whole-container">
+            <h2>
                 All 3D models were created by me using Womp. This includes the mini me, the chopsticks cursor, the lanterns, and the sushi!
                 This page was created using React.
-            </div>
+            </h2>
         </div>
     )
 }
