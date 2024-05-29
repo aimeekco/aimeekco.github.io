@@ -1,27 +1,35 @@
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
+    gap: 20px;
+    padding: 50px;
 }
 
-.photo-grid-item {
+.item {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.photo-grid-item img {
+.item img {
     top:0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-    border-radius: 5px;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    border-radius: 20px;
 }
 
-.photo-grid-item:hover img {
-    transform: scale(1.1);
+.item:hover img {
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+
+.item:hover {
+    .photo-description {
+        opacity: 1;
+    }
 }
 
 .photo-description {
@@ -33,10 +41,15 @@
     color: #fff;
     text-align: center;
     padding: 10px;
-    opacity: 0;
     transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1;
 }
 
-.photo-grid-item:hover .photo-description {
-    opacity: 1;
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
 }

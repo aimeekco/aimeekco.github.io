@@ -9,26 +9,41 @@ import violin from '../images/violin.jpg';
 import legoland from '../images/legoland.HEIC';
 import snowboard from '../images/snowboard.jpg';
 
-const photos = [
-    { src: violinportrait, description: 'Photo 1 description' },
-    { src: violin, description: 'Photo 2 description' },
-    { src: soccer, description: 'Photo 3 description' },
-    { src: track, description: 'Photo 4 description' },
-    { src: diving, description: 'Photo 5 description' },
-    { src: googlemap, description: 'Photo 6 description' },
-    { src: legoland, description: 'Photo 7 description' },
-    { src: snowboard, description: 'Photo 7 description' }
-];
-
 const PhotoGrid = () => {
     return (
         <div className="photo-grid">
-            {photos.map((photo, index) => (
-                <div className="photo-grid-item" key={index}>
-                    <img src={photo.src} alt={`${index + 1}`} />
-                    <div className="photo-description">{photo.description}</div>
-                </div>
-            ))}
+            <div className="item">
+                <img src={violinportrait} alt="Violin Portrait" />
+                <div className="photo-description">Solo violin, chamber music, orchestra!</div>
+            </div>
+            <div className="item">
+                <img src={violin} alt="Violin" />
+                <div className="photo-description">Started violin since I was 4!</div>
+            </div>
+            <div className="item">
+                <img src={soccer} alt="Soccer" />
+                <div className="photo-description">Varsity soccer!</div>
+            </div>
+            <div className="item">
+                <img src={track} alt="Track" />
+                <div className="photo-description">Varsity track - jumps and sprints!</div>
+            </div>
+            <div className="item">
+                <img src={diving} alt="Diving" />
+                <div className="photo-description">PADI certified diver!</div>
+            </div>
+            <div className="item">
+                <img src={googlemap} alt="Google Map" />
+                <div className="photo-description">Appearance on Google Maps street view with my brother!</div>
+            </div>
+            <div className="item">
+                <img src={legoland} alt="Legoland" />
+                <div className="photo-description">Legoland lifetime ambassador!</div>
+            </div>
+            <div className="item">
+                <img src={snowboard} alt="Snowboard" />
+                <div className="photo-description">Snowboarding with friends!</div>
+            </div>
         </div>
     );
 };

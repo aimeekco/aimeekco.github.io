@@ -51,14 +51,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
-  z-index: -10;
 }
 
 .panel-content {
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding: 40px;
 }
 
 .panel img {
