@@ -24,12 +24,11 @@ body, html {
 }
 
 .title-bar {
-    font-size: 40px;
-    font-family: 'Hirosh', sans-serif;
+    font-size: 50px;
+    font-family: 'Osaka', sans-serif;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 10px;
 }
 
 .hamburger-menu {
@@ -125,24 +124,18 @@ body, html {
 }
 
 @media (max-width: 800px) {
-  .lanternandtext {
-    margin: 0 40px; 
-  }
-  .title-bar {
-    font-size: 30px; 
-  }
   .hamburger-menu img {
     width: 30px;
     height: auto;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .lanternandtext {
     margin: 0 5px; 
   }
   .title-bar {
-    font-size: 25px; 
+    font-size: 45px; 
   }
 }
 
