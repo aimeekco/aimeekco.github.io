@@ -83,27 +83,6 @@ body, html {
   flex-direction: column;
   align-items: center;
 }
-  
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/Lato-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Osaka';
-  src: url('../fonts/osaka.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hirosh';
-  src: url('../fonts/hirosh.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @media (max-width: 1200px) {
   .lanternandtext {

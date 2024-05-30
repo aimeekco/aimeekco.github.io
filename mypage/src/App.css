@@ -7,3 +7,24 @@ body, html {
 * {
   cursor: url('./images/closedchopsticks.png'), auto;
 }
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Osaka';
+  src: url('./fonts/osaka.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hirosh';
+  src: url('./fonts/hirosh.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

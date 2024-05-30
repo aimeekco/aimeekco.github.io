@@ -3,6 +3,7 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 0;
+    font-family: 'Lato', sans-serif;
   }
   
   .timeline::before {
@@ -12,7 +13,7 @@
     background-color: #ccc;
     top: 0;
     bottom: 0;
-    left: 110px;
+    left: 101px;
   }
   
   .timeline-item {
