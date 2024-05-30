@@ -3,7 +3,6 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 0;
-    justify-content: center;
   }
   
   .timeline::before {
@@ -13,16 +12,17 @@
     background-color: #ccc;
     top: 0;
     bottom: 0;
-    left: 120px;
+    left: 110px;
   }
   
   .timeline-item {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 100%;
     left: 50%;
     text-align: left;
+    display: flex;
     transition: transform 0.3s ease-in-out;
     align-items: center;
   }
@@ -49,18 +49,14 @@
   
   .timeline-content:hover {
     transform: scale(1.05);
-    .timeline-dot {
-      background-color: #ff4500;
-    
-    }
   }
   
   .timeline-content {
     left: -100px;
-    padding: 20px 30px;
+    padding: 20px;
     background-color: white;
     position: relative;
-    border-radius: 6px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
   }

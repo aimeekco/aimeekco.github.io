@@ -4,30 +4,6 @@ body, html {
   scroll-behavior: smooth;
 }
 
-.full-container {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.page-content {
-  margin-top: 60px;
-  transition: margin-top 0.3s ease;
-}
-
-.page-content.reduced-margin {
-  margin-top: 30px;
-}
-
-.nav-lanterns.hidden {
-  display: none;
-}
-
-.mobile-menu {
-  opacity: 0.95;
-}
-
 * {
   cursor: url('./images/closedchopsticks.png'), auto;
 }

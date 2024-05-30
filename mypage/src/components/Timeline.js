@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/timeline.css';
 
-
 const educationData = [
   {
     title: "Harvey Mudd College",
@@ -33,10 +32,10 @@ export default function BasicTimeline() {
             <div className="timeline-dot" />
             <div className="timeline-content">
               <h3>{edu.title}</h3>
-              <p>{edu.degree}</p>
+              {edu.degree && <p>{edu.degree}</p>}
             </div>
           </div>
         ))}
       </div>
     );
-  } 
+}
