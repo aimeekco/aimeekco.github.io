@@ -9,9 +9,12 @@ html {
 }
 
 .content-container {
-  margin-top: 40px;
+  margin-top: 50px;
   transition: margin-top 0.3s ease;
-  margin-bottom: 40px;
+}
+
+.reduced-margin { 
+  margin-top: 10px;
 }
 
 .aboutme-container {

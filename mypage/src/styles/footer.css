@@ -5,7 +5,7 @@
     background-color: #f18e8e;
     height: 50px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -15,7 +15,7 @@
 .footer-text {
     font-size: 16px;
     color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .insta img {

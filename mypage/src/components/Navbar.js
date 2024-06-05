@@ -6,7 +6,7 @@ import hamburger from '../images/hamburger.png';
 
 function Navbar({ setShowLanterns }) {
   const [menuOpen, setMenuOpen] = useState(false); 
-
+ 
   return (
     <div className="full-container">
       <div className="navbar">
