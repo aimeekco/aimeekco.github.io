@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AppRoutes from './AppRoutes';
+import Footer from './components/Footer';
 import './App.css';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -13,6 +14,7 @@ function App() {
         <div >
           <AppRoutes />
         </div>
+        <Footer />
       </Router>
     </ParallaxProvider>
   );

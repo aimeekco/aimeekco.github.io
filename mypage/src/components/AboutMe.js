@@ -5,7 +5,6 @@ import '../styles/aboutMe.css';
 import ScrollIndicator from './ScrollIndicator';
 import Timeline from './Timeline';
 import PhotoGrid from './PhotoGrid';
-import Footer from './Footer';
 
 function AboutMe() {
   const [showLanterns, setShowLanterns] = useState(true);
@@ -55,7 +54,6 @@ function AboutMe() {
           </div>
         </Parallax>
       </div>
-      <Footer />
     </div>
   );
 }
