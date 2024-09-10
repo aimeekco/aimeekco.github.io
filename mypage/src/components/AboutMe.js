@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import minimeturn from '../images/minimeturning.png';
+import minimeturn from '../images/minimeturn.png';
 import '../styles/aboutMe.css';
 import ScrollIndicator from './ScrollIndicator';
 import Timeline from './Timeline';
