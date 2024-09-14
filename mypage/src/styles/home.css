@@ -1,0 +1,40 @@
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.github img {
+    width: 27px;
+    height: 27px;
+    margin-right: 24px;
+    margin-bottom: 10px;
+}
+
+.github :hover {
+    color: #fff;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.linkedin img {
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+}
+
+.linkedin :hover {
+    transform: scale(1.1);
+}
+
+.mail img {
+    width: 40px;
+    margin-bottom: 2.5px;
+}
+
+.mail :hover {
+    transform: scale(1.1);
+}
