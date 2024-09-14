@@ -38,7 +38,7 @@ function AboutMe() {
           <img src={minimeturn} alt="Aimee" />
         </div>
         <div className="hello">
-          <h1>Hi! I'm Aimee</h1>
+          <h1 >Hi! I'm Aimee</h1>
         </div>
       </div>
       <ScrollIndicator />
