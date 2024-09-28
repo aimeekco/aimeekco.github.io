@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import minimeturn from '../images/minimeturn.png';
 import '../styles/aboutMe.css';
-import ScrollIndicator from './ScrollIndicator';
+// import ScrollIndicator from './ScrollIndicator';
 import Timeline from './Timeline';
 import PhotoGrid from './PhotoGrid';
 
@@ -41,7 +41,6 @@ function AboutMe() {
           <h1 >Hi! I'm Aimee</h1>
         </div>
       </div>
-      <ScrollIndicator />
       <div className="panels-container">
         <Parallax className="panel">
           <div className="panel-content">
