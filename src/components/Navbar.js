@@ -28,7 +28,7 @@ function Navbar({ setShowLanterns }) {
             <span> About site </span>
           </div>
         </Link>
-        <Link to="/landing">
+        <Link to="/projects">
           <div className="lanternandtext">
             <img src={lantern} alt="Projects" height={80} className="lantern" />
             <span> Projects </span>
@@ -45,7 +45,7 @@ function Navbar({ setShowLanterns }) {
         <div className="mobile-menu">
           <Link to="/" onClick={() => setMenuOpen(false)}>About me</Link>
           <Link to="/aboutsite" onClick={() => setMenuOpen(false)}>About site</Link>
-          <Link to="/landing" onClick={() => setMenuOpen(false)}>Projects</Link>
+          <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}

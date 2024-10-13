@@ -1,46 +1,37 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/contact.css';
-import github from "../images/github.png";
-import linkedin from "../images/linkedin.png";
-import mail from "../images/mail.png";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+    const form = useRef();
+    const serviceID = 'default_service';
+    const templateID = 'template_0k286ec';
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(serviceID, templateID, form.current, 'ZfsTjb0jekW8mR8wM')
+            .then(() => {
+                alert('Sent!');
+            }, (error) => {
+                alert(JSON.stringify(error));
+            });
+    };
+
     return (
-        <div>
-            <div className="contact">
-                <h1>Contact me!</h1>
-                <p>Feel free to contact me at aimeekco@gmail.com or through my LinkedIn!
-                </p>
-            </div>
-            <footer>
-                <p>&copy; 2024 Aimee Co. Website coded and built by Aimee Co. All rights reserved.</p>
-                <div className="footer-container">
-                    <a
-                    href="https://github.com/aimeekco"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="github"
-                    >
-                    <img src={github} alt="Github" />
-                    </a>
-                    <a
-                    href="https://www.linkedin.com/in/aimee-co-686512290/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="linkedin"
-                    >
-                    <img src={linkedin} alt="Linkedin" />
-                    </a>
-                    <a
-                    href="mailto:aimeekco@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mail"
-                    >
-                    <img src={mail} alt="Mail" />
-                    </a>
+        <div className="contact-form">
+            <h2>Let's get in touch!</h2>
+            <form ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="from_name" required />
+                <label>Email</label>
+                <input type="email" name="reply_to" required />
+                <label>Message</label>
+                <textarea name="message" required />
+                <div className="button-container">
+                    <button type="submit">Send </button>
                 </div>
-            </footer>
+            </form>
         </div>
     )
 }

@@ -24,6 +24,18 @@ import datathon from '../images/datathondemo.mov';
 import halfliferegression from '../images/halfliferegression.pdf';
 
 const projects = [
+  { type: 'video', image: onigiri, demo: datathon, title: 'Flight Delay Prediction', description: '1st Place - 2023 5C Datathon',
+    longdescription: 
+    <ul>
+      <li><strong>Goal:</strong> Compete in an 8-hour datathon to create a predictive model for flight delays.</li>
+      <li><strong>Outcomes:</strong>
+        <ul>
+          <li>Placed 1st out of 30 teams with the highest AUROC score.</li>
+          <li>Implemented XGBoost on flight delay dataset.</li>
+        </ul>
+      </li>
+    </ul>
+  },
   { type: 'video', image: ikura, demo: newspaper, title: 'P-Newspaper', description: 'An AI-powered web app that delivers a personalized news feed sourced from a wide range of reputable sources based on selected and inputted interests.',
     longdescription: (
       <ul>
@@ -116,18 +128,6 @@ const projects = [
         </ul>
       </li>
     </ul>
-  },
-  { type: 'video', image: onigiri, demo: datathon, title: 'Flight Delay Prediction', description: '1st Place - 2023 5C Datathon',
-    longdescription: 
-    <ul>
-      <li><strong>Goal:</strong> Compete in an 8-hour datathon to create a predictive model for flight delays.</li>
-      <li><strong>Outcomes:</strong>
-        <ul>
-          <li>Placed 1st out of 30 teams with the highest AUROC score.</li>
-          <li>Implemented XGBoost on flight delay dataset.</li>
-        </ul>
-      </li>
-    </ul>
   }
   ];
 
@@ -172,12 +172,12 @@ const ConveyorBelt = () => {
         slidesPerView={slidesPerView}
         spaceBetween={30}
         loop={true}
-        // autoplay={{ 
-        //   delay: 1000, 
-        //   disableOnInteraction: true,
-        //   pauseOnMouseEnter: true 
-        // }}
-        speed={1000}
+        autoplay={{ 
+          delay: 200, 
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true 
+        }}
+        speed={5000}
         coverflowEffect={{
           rotate: -20,
           stretch: 0,

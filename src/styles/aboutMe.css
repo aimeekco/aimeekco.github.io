@@ -30,12 +30,13 @@ html {
 }
 
 .minime {
+  margin-left: 10%;
   margin-right: 0 20px;
 }
 
 .minime img {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
   
 .hello {
@@ -74,13 +75,16 @@ html {
 }
 
 @media (max-width: 1000px) {
+  .minime {
+    margin-left: 0;
+  }
   .aboutme-container {
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
   }
   .minime img {
-    max-width: 700px;
+    max-width: 500px;
   }
   .hello {
     margin-top: -40px;
