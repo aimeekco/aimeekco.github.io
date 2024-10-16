@@ -4,6 +4,7 @@ import minimeturn from '../images/minimeturn.png';
 import '../styles/aboutMe.css';
 import Timeline from './Timeline';
 import PhotoGrid from './PhotoGrid';
+import resume from '../images/Co_Aimee_Resume.pdf';
 
 function AboutMe() {
   const [showLanterns, setShowLanterns] = useState(true);
@@ -37,6 +38,10 @@ function AboutMe() {
         </div>
         <div className="hello">
           <h1 >Hi! I'm Aimee</h1>
+          <h3>Junior at Harvey Mudd College studying CS + Math</h3>
+          <a href={resume} className="resume-button" target="_blank" rel="noopener noreferrer">
+            View My Resume
+          </a>
         </div>
       </div>
       <div className="panels-container">

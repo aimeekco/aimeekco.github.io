@@ -177,7 +177,7 @@ const ConveyorBelt = () => {
           disableOnInteraction: true,
           pauseOnMouseEnter: true 
         }}
-        speed={5000}
+        speed={3000}
         coverflowEffect={{
           rotate: -20,
           stretch: 0,

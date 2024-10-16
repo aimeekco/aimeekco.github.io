@@ -40,8 +40,36 @@ html {
 }
   
 .hello {
-    font-family: 'LatoBlack', sans-serif;
-    font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hello h1 {
+  font-family: 'LatoBlack', sans-serif;
+  font-size: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hello p {
+  font-size: 20px;
+}
+
+.resume-button {
+  padding: 10px 20px;
+  background-color: #880808;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: background-color 0.5s ease;
+  max-width: 150px;
+}
+
+.resume-button:hover {
+  background-color: #2e0505;
 }
 
 .panels-container {

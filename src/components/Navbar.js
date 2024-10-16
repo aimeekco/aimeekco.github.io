@@ -22,10 +22,10 @@ function Navbar({ setShowLanterns }) {
             <span> About me </span>
           </div>
         </Link>
-        <Link to="/aboutsite">
+        <Link to="/experience">
           <div className="lanternandtext">
-            <img src={lantern} alt="About site" height={80} className="lantern" />
-            <span> About site </span>
+            <img src={lantern} alt="Experience" height={80} className="lantern" />
+            <span> Experience </span>
           </div>
         </Link>
         <Link to="/projects">
