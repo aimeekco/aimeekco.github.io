@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.facdb8cd.css",
-    "main.js": "/static/js/main.3c09e222.js",
+    "main.css": "/static/css/main.c78f7968.css",
+    "main.js": "/static/js/main.44a5ddb2.js",
     "static/js/453.01c969ee.chunk.js": "/static/js/453.01c969ee.chunk.js",
     "static/media/datathondemo.mov": "/static/media/datathondemo.9b39c5f464ca38f4e728.mov",
     "static/media/cnndemo.mov": "/static/media/cnndemo.3da555a07496cffbadb9.mov",
@@ -27,6 +27,7 @@
     "static/media/soccer.jpg": "/static/media/soccer.badeedd255f86d6ed6b7.jpg",
     "static/media/diving.jpg": "/static/media/diving.37d7918b998ecde9691c.jpg",
     "static/media/snowboard.jpg": "/static/media/snowboard.98016e183089d60edbc7.jpg",
+    "static/media/closetab.png": "/static/media/closetab.ab54be52472397b78156.png",
     "static/media/Raleway-Medium.ttf": "/static/media/Raleway-Medium.0de5925709848b7e64c5.ttf",
     "static/media/Raleway-Regular.ttf": "/static/media/Raleway-Regular.d9219d8a361ac3530c7e.ttf",
     "static/media/violin.jpg": "/static/media/violin.773692dde3a87c74c55e.jpg",
@@ -35,12 +36,12 @@
     "static/media/mail.png": "/static/media/mail.284d1cc1b59876a0e738.png",
     "static/media/osaka.ttf": "/static/media/osaka.23e25886d1d44ce0348d.ttf",
     "index.html": "/index.html",
-    "main.facdb8cd.css.map": "/static/css/main.facdb8cd.css.map",
-    "main.3c09e222.js.map": "/static/js/main.3c09e222.js.map",
+    "main.c78f7968.css.map": "/static/css/main.c78f7968.css.map",
+    "main.44a5ddb2.js.map": "/static/js/main.44a5ddb2.js.map",
     "453.01c969ee.chunk.js.map": "/static/js/453.01c969ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.facdb8cd.css",
-    "static/js/main.3c09e222.js"
+    "static/css/main.c78f7968.css",
+    "static/js/main.44a5ddb2.js"
   ]
 }
