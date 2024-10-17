@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import minimeturn from '../images/minimeturn.png';
 import '../styles/aboutMe.css';
-import Timeline from './Timeline';
+// import Timeline from './Timeline';
 import PhotoGrid from './PhotoGrid';
 import resume from '../images/Co_Aimee_Resume.pdf';
 
@@ -63,11 +63,11 @@ function AboutMe() {
           </div>
         </div>
         <div className="panels-container">
-          <Parallax className="panel">
+          {/* <Parallax className="panel">
             <div className="panel-content">
               <Timeline />
             </div>
-          </Parallax>
+          </Parallax> */}
           <Parallax className="panel">
             <div className="panel-content">
               <PhotoGrid />

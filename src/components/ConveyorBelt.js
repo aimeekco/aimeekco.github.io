@@ -7,6 +7,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
+import closetab from '../images/closetab.png';
 import ikura from '../images/ikura.png';
 import salmon from '../images/salmon.png';
 import tuna from '../images/tuna.png';
@@ -173,11 +174,11 @@ const ConveyorBelt = () => {
         spaceBetween={30}
         loop={true}
         autoplay={{ 
-          delay: 500, 
+          delay: 600, 
           disableOnInteraction: true,
           pauseOnMouseEnter: true 
         }}
-        speed={3500}
+        speed={5000}
         coverflowEffect={{
           rotate: -20,
           stretch: 0,
@@ -206,7 +207,9 @@ const ConveyorBelt = () => {
           <div className="overlay" onClick={handleCloseClick}></div>
           <div className="enlarged-card">
             <div className="enlarged-content">
-              <button className="close-button" onClick={handleCloseClick}>✖</button>
+              <button className="close-button" onClick={handleCloseClick}>
+                <img src={closetab} alt="Close" />
+              </button>
               {enlargedProject.type === 'video' ? (
                 <video controls>
                   <source src={enlargedProject.demo} type="video/mp4" />
@@ -214,7 +217,7 @@ const ConveyorBelt = () => {
                   Your browser does not support the video tag.
                 </video>
               ) : (
-                <iframe src={enlargedProject.demo} width="100%" height="500px" title={enlargedProject.title}></iframe>
+                <iframe src={enlargedProject.demo} width="100%" height="600px" title={enlargedProject.title}></iframe>
               )}
               <div >
                 <h3>{enlargedProject.title}</h3>

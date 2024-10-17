@@ -109,7 +109,7 @@ html {
   .aboutme-container {
     flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .minime img {
     max-width: 500px;
@@ -119,6 +119,27 @@ html {
   }
   .hello h1 {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .minime img {
+    max-width: 400px;
+  }
+  .hello h1 {
+    font-size: 40px;
+  }
+  .hello p {
+    font-size: 16px;
+  }
+  .resume-button {
+    font-size: 16px;
+  }
+  .panel img {
+    width: 300px;
+  }
+  .panel p {
+    font-size: 16px;
   }
 }
 
@@ -146,7 +167,7 @@ html {
 }
 
 .overlay-content {
-  margin-top: -340%;
+  margin-top: -240%;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
