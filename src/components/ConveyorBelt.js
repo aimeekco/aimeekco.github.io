@@ -173,11 +173,11 @@ const ConveyorBelt = () => {
         spaceBetween={30}
         loop={true}
         autoplay={{ 
-          delay: 200, 
+          delay: 500, 
           disableOnInteraction: true,
           pauseOnMouseEnter: true 
         }}
-        speed={3000}
+        speed={3500}
         coverflowEffect={{
           rotate: -20,
           stretch: 0,
