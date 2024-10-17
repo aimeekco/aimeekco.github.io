@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1c67985f.css",
-    "main.js": "/static/js/main.0fcc819b.js",
+    "main.js": "/static/js/main.1a68a61c.js",
     "static/js/453.01c969ee.chunk.js": "/static/js/453.01c969ee.chunk.js",
     "static/media/datathondemo.mov": "/static/media/datathondemo.9b39c5f464ca38f4e728.mov",
     "static/media/cnndemo.mov": "/static/media/cnndemo.3da555a07496cffbadb9.mov",
@@ -12,7 +12,7 @@
     "static/media/googlemap.png": "/static/media/googlemap.a1d076557b391d797871.png",
     "static/media/roomdrawdemo.mp4": "/static/media/roomdrawdemo.f6d0ff16237fe37a2f72.mp4",
     "static/media/track.jpg": "/static/media/track.cfbb56d53a94e397cbcc.jpg",
-    "static/media/legoland.HEIC": "/static/media/legoland.a2762de2cf117b389884.HEIC",
+    "static/media/legoland.jpg": "/static/media/legoland.a2762de2cf117b389884.jpg",
     "static/media/uni.png": "/static/media/uni.e52e91eb39b67823d245.png",
     "static/media/tuna.png": "/static/media/tuna.5aaa0b2c09ecf036ba3f.png",
     "static/media/ikura.png": "/static/media/ikura.f25032dff3389076c69e.png",
@@ -37,11 +37,11 @@
     "static/media/osaka.ttf": "/static/media/osaka.23e25886d1d44ce0348d.ttf",
     "index.html": "/index.html",
     "main.1c67985f.css.map": "/static/css/main.1c67985f.css.map",
-    "main.0fcc819b.js.map": "/static/js/main.0fcc819b.js.map",
+    "main.1a68a61c.js.map": "/static/js/main.1a68a61c.js.map",
     "453.01c969ee.chunk.js.map": "/static/js/453.01c969ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c67985f.css",
-    "static/js/main.0fcc819b.js"
+    "static/js/main.1a68a61c.js"
   ]
 }
