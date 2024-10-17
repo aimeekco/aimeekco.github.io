@@ -6,7 +6,7 @@ import track from '../images/track.jpg';
 import diving from '../images/diving.jpg';
 import violinportrait from '../images/violinportrait.JPEG';
 import violin from '../images/violin.jpg';
-import legoland from '../images/legoland.HEIC';
+import legoland from '../images/legoland.jpg';
 import snowboard from '../images/snowboard.jpg';
 
 const PhotoGrid = () => {
