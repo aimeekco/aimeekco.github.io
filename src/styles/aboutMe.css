@@ -12,6 +12,7 @@ html {
 .content-container {
   margin-top: 50px;
   transition: margin-top 0.3s ease;
+  font-family: 'Raleway', sans-serif;
 }
 
 .reduced-margin { 
@@ -47,7 +48,6 @@ html {
 }
 
 .hello h1 {
-  font-family: 'LatoBlack', sans-serif;
   font-size: 70px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -65,7 +65,7 @@ html {
   border-radius: 10px;
   font-size: 20px;
   transition: background-color 0.5s ease;
-  max-width: 150px;
+  max-width: 170px;
 }
 
 .resume-button:hover {
@@ -120,8 +120,8 @@ html {
 }
 
 @font-face {
-  font-family: 'LatoBlack';
-  src: url('../fonts/Lato-Black.ttf') format('truetype');
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

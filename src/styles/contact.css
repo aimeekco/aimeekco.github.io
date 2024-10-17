@@ -11,6 +11,7 @@
     max-width: 600px;
     margin: auto;
     margin-top: 240px;
+    font-family: 'Raleway medium', sans-serif;
 }
 
 .contact-form h2 {
@@ -69,3 +70,10 @@
 .contact-form button:hover {
     background: #401313;
 }
+
+@font-face {
+    font-family: 'Raleway medium';
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

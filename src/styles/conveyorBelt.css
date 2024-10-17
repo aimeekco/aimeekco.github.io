@@ -6,7 +6,7 @@
   overflow: hidden;
   margin-top: 300px;
   margin-left: 2.5%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .swiper-container {
@@ -170,4 +170,11 @@ ul li::before {
   content: '• ';
   color: black; 
   font-weight: bold; 
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
