@@ -46,7 +46,6 @@ body, html {
     margin: 0 150px;
     font-family: 'Osaka', sans-serif;
     transition: transform 0.3s ease;
-    text-decoration: none;
 }
 
 .lanternandtext:hover {
@@ -58,6 +57,10 @@ body, html {
 
 .lanternandtext img.lantern {
   transition: transform 0.3s ease;
+}
+
+.lanternlabel {
+  text-decoration: none;
 }
 
 .nav-lanterns {

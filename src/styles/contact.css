@@ -84,3 +84,9 @@
         margin-top: 200px;
     }
 }
+
+@media (max-height: 800px) {
+    .contact-form {
+        margin-top: 150px;
+    }
+}

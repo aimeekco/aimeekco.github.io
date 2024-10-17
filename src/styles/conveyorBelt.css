@@ -118,7 +118,7 @@
 
 @media (max-width: 1000px) {
   .container {
-    margin-top: 200px;
+    margin-top: 250px;
   }
   .card {
     max-width: 800px;
@@ -148,6 +148,12 @@
   .enlarged content video {
     min-width: none;
     max-width: 300px;
+  }
+}
+
+@media (max-height: 800px) {
+  .container {
+    margin-top: 150px;
   }
 }
 
