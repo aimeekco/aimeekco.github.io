@@ -45,12 +45,12 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -50px;
 }
 
 .hello h1 {
   font-size: 70px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .hello p {

@@ -44,7 +44,7 @@ function Navbar({ setShowLanterns }) {
       {menuOpen && (
         <div className="mobile-menu">
           <Link to="/" onClick={() => setMenuOpen(false)}>About me</Link>
-          <Link to="/aboutsite" onClick={() => setMenuOpen(false)}>About site</Link>
+          <Link to="/experience" onClick={() => setMenuOpen(false)}>Experience</Link>
           <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
