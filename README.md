@@ -6,3 +6,4 @@ Sushi-themed personal website using React.js. Still in development.
 * Dynamic and interactive navigation elements and layout
 * Custom cursor, mini me, and sushi 3D modeled using Womp
 * "Conveyor belt" with past projects
+* [Just go check it out!!!!](https://aimeekco.github.io)
