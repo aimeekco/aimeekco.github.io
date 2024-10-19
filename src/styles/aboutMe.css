@@ -150,7 +150,7 @@ html {
   font-style: normal;
 }
 
-#overlay {
+/* #overlay {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -178,4 +178,4 @@ html {
   #overlay {
     display: none;
   }
-}
+} */

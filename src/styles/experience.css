@@ -1,70 +1,75 @@
 .experience-page {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    min-height: 100vh;      
-    text-align: center;      
-    padding: 100px;
-    margin-top: 140px;
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  header h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Raleway medium', sans-serif;
-  }
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  min-height: 100vh;      
+  text-align: center;      
+  padding: 100px;
+  margin-top: 140px;
+  font-family: 'Raleway', sans-serif;
+}
 
-  .menu-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 5px;
-    background-color: #880808;
-    color: white;
-    padding: 2px;
-    border-radius: 20px;
-    margin-bottom: 40px;
-  }
-  
-  #roles {
-    border-radius: 30px;
-    border-style: solid;
-    border-color: #a5a0a0;
-    padding: 30px;
-  }
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Raleway medium', sans-serif;
+}
 
-  #roles .role {
-    padding: 15px;
-    margin: 0 10px;
-    max-width: 800px;
-    border-bottom: thick double #ccc;
-  }
-  
-  #roles .role h4 {
-    margin: 0 0 5px 0;
-  }
-  
-  #roles .role p {
-    margin: 5px 0;
-  }
+.menu-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  background-color: #880808;
+  color: white;
+  padding: 2px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+#roles .role, .coursework, .skills-coursework-container {
+  text-align: left;
+}
+
+#roles {
+  border-radius: 30px;
+  border-style: solid;
+  border-color: #a5a0a0;
+  padding: 30px;
+}
+
+#roles .role {
+  padding: 15px;
+  margin: 0 10px;
+  max-width: 800px;
+  border-bottom: thick double #ccc;
+}
+
+#roles .role h4 {
+  margin: 0 0 5px 0;
+}
+
+#roles .role p {
+  margin: 5px 0;
+}
 
   
 .skills-coursework-container {
-    display: flex;
-    padding: 20px; 
-    margin-top: 30px;
-  }
+  display: flex;
+  padding: 20px; 
+  margin-top: 30px;
+}
 
-  .skill {
-    margin-bottom: 10px;
-  }
-  
-  progress {
-    appearance: none;
-    width: 100%;
-    height: 20px;
-    background-color: #f2f2f2;
-  }
+.skill {
+  margin-bottom: 10px;
+}
+
+progress {
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  background-color: #f2f2f2;
+}
   
 progress::-webkit-progress-bar {
     background-color: #fff;
@@ -82,6 +87,25 @@ progress::-webkit-progress-value {
 #coursework li {
     padding: 5px 0;
 }
+
+.coursework {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.role-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dynamic-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #880808;
+  margin: 0 10px;
+}
   
 
 @font-face {
@@ -91,9 +115,29 @@ progress::-webkit-progress-value {
     font-style: normal;
   }
 
-  @font-face {
+@font-face {
     font-family: 'Raleway medium';
     src: url('../fonts/Raleway-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .experience-page {
+    align-items: flex-start;
+    padding: 20px;
   }
+  header h1, .menu-title {
+    text-align: center;
+  }
+  #roles .role, .coursework, .skills-coursework-container {
+    text-align: left;
+  }
+  .coursework {
+    padding-left: 0;
+  }
+  .skills-coursework-container {
+    flex-direction: column;
+    align-items: flex-start
+  }
+}

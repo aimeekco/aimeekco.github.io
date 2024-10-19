@@ -8,7 +8,7 @@ import resume from '../images/Co_Aimee_Resume.pdf';
 
 function AboutMe() {
   const [showLanterns, setShowLanterns] = useState(true);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  // const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,25 +22,25 @@ function AboutMe() {
       }
     };
 
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      setIsSmallScreen(screenWidth <= 640);
-    }
+    // const handleResize = () => {
+    //   const screenWidth = window.innerWidth;
+    //   setIsSmallScreen(screenWidth <= 640);
+    // }
 
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
+    // window.addEventListener('resize', handleResize);
 
-    handleResize();
+    // handleResize();
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleResize);
-    };
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //     window.removeEventListener('resize', handleResize);
+  //   };
   }, []);
 
   return (
     <div>
-      {isSmallScreen && (
+      {/* {isSmallScreen && (
         <div id="overlay">
           <div className="overlay-content">
             <h1>SCREEN TOO SMALL!</h1>
@@ -48,7 +48,7 @@ function AboutMe() {
             <p>working on it...</p>
           </div>
         </div>
-      )}
+      )} */}
       <div className={`content-container ${showLanterns ? '' : 'reduced-margin'}`}>
         <div className="aboutme-container">
           <div className="minime">
