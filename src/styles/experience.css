@@ -127,11 +127,16 @@ progress::-webkit-progress-value {
     align-items: flex-start;
     padding: 20px;
   }
-  header h1, .menu-title {
+  header h1 {
     text-align: center;
+  }
+  .menu-title {
+    text-align: center;
+    font-size: 16px;
   }
   #roles .role, .coursework, .skills-coursework-container {
     text-align: left;
+    font-size: 14px;
   }
   .coursework {
     padding-left: 0;

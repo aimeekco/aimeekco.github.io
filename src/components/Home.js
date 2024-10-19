@@ -18,7 +18,7 @@ function Home() {
                 <AboutMe />
             </section>
             <footer>
-                <p>&copy; 2024 Aimee Co. Website coded and built by Aimee Co. All rights reserved.</p>
+                <p>&copy; 2024 Aimee Co. Website coded and built by Aimee.</p>
                 <div className="footer-container">
                     <a
                     href="https://github.com/aimeekco"

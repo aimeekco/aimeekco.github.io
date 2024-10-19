@@ -85,8 +85,8 @@
     }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 700px) {
     .contact-form {
-        margin-top: 150px;
+        margin-top: 100px;
     }
 }

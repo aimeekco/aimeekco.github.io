@@ -56,12 +56,6 @@ const projects = [
             <li>TSVector from article summaries in DB, matching user-selected interests</li>
           </ul>
         </li>
-        <li><strong>Functionality:</strong>
-          <ul>
-            <li>User inputs topics in a freeform manner</li>
-            <li>Inputs and remaining articles sent to OpenAI API for relevance sorting</li>
-          </ul>
-        </li>
       </ul>
     )
   },
@@ -221,7 +215,7 @@ const ConveyorBelt = () => {
               )}
               <div >
                 <h3>{enlargedProject.title}</h3>
-                <p>{enlargedProject.longdescription}</p>
+                <div>{enlargedProject.longdescription}</div>
               </div>
             </div>
           </div>
