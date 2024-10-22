@@ -150,6 +150,55 @@ html {
   font-style: normal;
 }
 
+.additional-info {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #555;
+  transition: opacity 0.5s ease;
+}
+
+
+.minime img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.minime img.hover-effect:hover {
+  transform: scale(1.03); 
+}
+
+.additional-info p {
+  font-size: 1.2em;
+  color: #555;
+  font-family: 'Courier', monospace; 
+  white-space: pre-wrap; 
+}
+
+.speech-bubble {
+  position: absolute;
+  top: 70%; 
+  left: 38%; 
+  width: 90px;
+  background-color: #f1f1f1;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  display: none;
+}
+
+.speech-bubble p {
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.minime:hover .speech-bubble {
+  display: block;
+}
+
+
 /* #overlay {
   position: fixed;
   display: flex;
