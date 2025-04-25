@@ -146,3 +146,31 @@ progress::-webkit-progress-value {
     align-items: flex-start
   }
 }
+
+.coursework-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.coursework-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.coursework-column ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.coursework-column li {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .coursework-container {
+    flex-direction: column;
+  }
+}

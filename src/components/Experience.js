@@ -11,20 +11,32 @@ const Experience = () => {
 
   const roles = [
     {
+      title: "Incoming Software Development Engineer Intern, Amazon",
+      date: "$6.25-8.25",
+      description: "STORES Team!",
+      technologies: "Don't know yet!"
+    },
+    {
+      title: "Director of Projects, P-AI",
+      date: "$12.24-5.25",
+      description: "Overseeing and advising student-driven SWE & ML projects.",
+      technologies: "Variety!"
+    },
+    {
       title: "Machine Learning and Software Intern, Dasion",
-      date: "$5.24-",
+      date: "$5.24-12.24",
       description: "Leading a 4 person team to develop an AI-enhanced EMR platform for healthcare providers integrated with the SMART Health system.",
       technologies: "Python, TensorFlow, Keras, BigQuery, EMR, SMART on FHIR"
     },
     {
       title: "Engineering Team Lead, 5C Hack",
-      date: "$9.24-",
+      date: "$9.24-4.25",
       description: "Co-leading 4 person team to create dynamic website for 2025 Claremont Colleges Hackathon.",
       technologies: "ReactJS, Vercel, JavaScript, HTML, CSS"
     },
     {
         title: "Teaching Assistant, Computing for the Web, CMC",
-        date: "$8.24-",
+        date: "$8.24-12.24",
         description: "Assisting students in learning HTML, CSS, and JavaScript with the goal of creating their own web apps.",
         technologies: "Python, HTML, CSS, JavaScript"
     },
@@ -49,16 +61,25 @@ const Experience = () => {
   ];
 
   const coursework = [
+    "Reinforcement Learning",
+    "Algorithms",
     "Data Structures and Program Development",
     "Computability and Logic",
     "Data Structures and Algorithms",
     "Principles of Computer Science",
     "Mathematics of Big Data",
     "Real Analysis",
+    "Abstract Algebra",
     "Discrete Mathematics",
     "Differential Equations/Modeling",
+    "Linear Algebra",
     "Statistics and Experimental Design"
   ];
+
+  const middleIndex = Math.ceil(coursework.length / 2);
+  const firstColumnCourses = coursework.slice(0, middleIndex);
+  const secondColumnCourses = coursework.slice(middleIndex);
+
 
   return (
     <div className="experience-page">
@@ -79,27 +100,22 @@ const Experience = () => {
           </div>
         ))}
         <h2>Relevant Coursework</h2>
-        <div className="coursework">
-          <ul>
-            {coursework.map((course, index) => (
-              <li key={index}>{course}</li>
-            ))}
-          </ul>
+        <div className="coursework-container">
+          <div className="coursework-column">
+            <ul>
+              {firstColumnCourses.map((course, index) => (
+                <li key={index}>{course}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="coursework-column">
+            <ul>
+              {secondColumnCourses.map((course, index) => (
+                <li key={index + middleIndex}>{course}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </section>
-
-      <section id="skills-coursework" className="skills-coursework-container">
-        {/* <div className="skills">
-          <h3>Skills</h3>
-          {skills.map((skill, index) => (
-            <div key={index} className="skill">
-              <label htmlFor={skill.name}>{skill.name}</label>
-              <progress id={skill.name} value={skill.level} max="10"></progress>
-            </div>
-          ))}
-        </div> */}
-
-        
       </section>
     </div>
   );
